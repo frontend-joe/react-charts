@@ -1,0 +1,66 @@
+:root {
+  --color-label: #a7a7a7;
+  --color-text: #4e5262;
+  --font-family: "Euclid Circular A";
+}
+
+body {
+  margin: 0;
+  color: var(--color-text);
+  font-family: var(--font-family);
+}
+
+#root {
+  display: grid;
+  place-items: center;
+  background: #f4f6fd;
+}
+
+body,
+html,
+#root {
+  height: 100%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+header nav {
+  display: flex;
+  gap: 8px;
+}
+
+header button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  color: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+header button.active {
+  color: #5f7dff;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 22px;
+  margin: 0;
+}
+
+.card {
+  background: #ffffff;
+  width: 300px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 50px 100px rgba(0, 0, 0, 0.08);
+}
+
+.chart {
+  height: 160px;
+}
